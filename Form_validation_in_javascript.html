@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            const form = document.querySelector('#signup-form');
+const email = document.querySelector('#email');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value.length < 5) {
+    alert("Email is too short!");
+    return; 
+  }
+  document.write("Form submitted successfully!");
+});
+        </script>
+    </body>
+</html>

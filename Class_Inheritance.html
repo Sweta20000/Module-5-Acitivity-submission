@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    showName() {
+        document.write("Name: " + this.name + "<br>");
+    }
+}
+class Student extends Person {
+    constructor(name, hobby) {
+        super(name);
+        this.hobby = hobby;
+    }
+    showDetails() {
+        document.write("Hobby: " + this.hobby);
+    }
+}
+let s1 = new Student("Sweta Singh", "Dancing");
+s1.showName();
+s1.showDetails();
+</script>
+</body>
+</html>
