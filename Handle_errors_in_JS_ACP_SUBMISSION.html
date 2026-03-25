@@ -1,0 +1,17 @@
+<html>
+    <body>
+    <script>
+        try {
+  // Code that might fail
+  const result = 10 / someUndefinedVariable; 
+  document.write(result);
+} catch (error) {
+  // Code to run if an error happens
+  document.write("Oops! Something went wrong:", error.message);
+} finally {
+  // (Optional) This runs no matter what happened above
+  document.write("Cleanup: Closing connections or stopping loaders.");
+}
+    </script>
+    </body>
+    </html>

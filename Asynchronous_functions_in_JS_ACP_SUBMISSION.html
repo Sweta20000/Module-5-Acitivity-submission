@@ -1,0 +1,17 @@
+<html>
+    <bode>
+        <script>
+            async function getUserData() {
+  try {
+    const response = await fetch('https://api.example.com/user'); 
+    const data = await response.json(); 
+    
+    console.log(data);
+  } catch (error) {
+    console.error("Failed to get data:", error);
+  }
+}
+getUserData();
+        </script>
+    </bode>
+</html>
